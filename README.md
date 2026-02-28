@@ -50,3 +50,24 @@ To start the autoregressive training process, run:
 ```bash
 python gpt_train.py config.yaml
 ```
+
+### 2. Visualization & Extraction
+To extract the learned embeddings and generate a t-SNE plot (comparing Metabolic vs. Non-Metabolic phenotypes), run:
+```bash
+python visualize_embeddings.py
+```
+
+---
+
+## 📊 Analysis & Results
+### Trajectory Visualization (t-SNE)
+The model projects complex, years-long medication histories into a 2D space. The resulting clusters demonstrate how the "language" of prescriptions naturally separates different patient phenotypes.
+
+### File Outputs
+All results are saved to the gpt_train_results/ directory:
+
+* **best_model.pt: The trained model weights, optimizer state, and configuration.
+
+* **loss_epoch_N.png: Visualizations of training and validation loss curves.
+
+* **tsne_metabolic_distinction.png: A 2D projection showing the clinical separation between patient groups.
