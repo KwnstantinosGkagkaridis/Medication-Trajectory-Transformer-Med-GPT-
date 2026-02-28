@@ -66,8 +66,8 @@ The model projects complex, years-long medication histories into a 2D space. The
 ### File Outputs
 All results are saved to the gpt_train_results/ directory:
 
-* **best_model.pt: The trained model weights, optimizer state, and configuration.
+* best_model.pt: The trained model weights, optimizer state, and configuration.
 
-* **loss_epoch_N.png: Visualizations of training and validation loss curves.
+* loss_epoch_N.png: Visualizations of training and validation loss curves.
 
-* **tsne_metabolic_distinction.png: A 2D projection showing the clinical separation between patient groups.
+* tsne_metabolic_distinction.png: A 2D projection showing the clinical separation between patient groups.
